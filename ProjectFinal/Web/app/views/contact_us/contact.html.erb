@@ -1,0 +1,27 @@
+<html>
+<%= stylesheet_link_tag "contact_us.css" %>
+<body>
+<div class="live"><%= link_to image_tag("Untitled-6.jpg"),:action=> "home"%></div>
+<h2>Contact us</h2>
+<div class="toolbar">
+<%= link_to '<button type="button" class="home" >Home Page</button>'.html_safe, :action => 'home' %>
+<%= link_to '<button type="button" class="about" >About us</button>'.html_safe, :action => 'about' %>
+<%= link_to '<button type="button" class="contact" >Contact us</button>'.html_safe, :action => 'contact' %>
+</div>
+<h3>We will provide you with our mails and bench numbers </h3>
+<h4> Peter Nagy Alfred Micheal:
+	Mail:***********
+	Bench number:*****
+	 </h4>
+<h4> Beshoy Demian:
+	Mail:*****
+	Bench number:*****
+</h4>
+<h4> Peter Hany Alfy Morcos:
+	Mail:*******
+	Bench number: *****
+</h4>
+<p> "We Hope you have enjoyed our site" </p>
+<h6> &#169; all rights reserved </h6>
+</body>
+</html>

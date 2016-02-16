@@ -1,0 +1,24 @@
+.let{
+    height: 30%;
+    width: 500px;
+    font-size: 20px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+.update{
+	font-size: 40px;
+    color: yellow;
+    margin-left: 1%;
+}
+.name{
+    color: yellow;
+}
+.submt{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin-left: 16\5%;
+}

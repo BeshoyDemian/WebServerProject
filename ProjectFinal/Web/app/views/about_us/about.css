@@ -1,0 +1,58 @@
+h2{
+	margin-left: 40%;
+	color: #71C671;
+	font-size: 30px;
+}
+p {
+	font-size: 30px;
+	color: #00FF7F;
+
+	font-style: oblique;
+}
+}
+.toolbar{
+	display: flex;
+	background-color: black;
+   /* position: fixed;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+
+}
+.home {
+
+    height: 10%;
+    width: 33%;
+    font-size: 50px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+.about{
+	
+    height: 10%;
+    width: 33%;
+    font-size: 50px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+.contact{
+    height: 10%;
+    width: 33%;
+    font-size: 50px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+   background-color: black;
+
+}
+
+*{
+	background-color: #27408B;
+}

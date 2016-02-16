@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag "editt.css" %>
+<head><link rel="stylesheet" type="text/css" href="editt.css"></head>
+<div>
+<%= link_to('<button type="button" class="let"><< Back to the Photo</button>'.html_safe,{:action => "index",:photoid=>params[:photo_id]})%>
+</div>
+
+
+<div class = "comments edit">
+<h2 class="update">Update Comment</h2>
+
+<%= form_for(:comment , :url => {:action => "update", :id => @comments.id,:photo_id=>params[:photo_id]}) do |f| %>
+<table summary="comments from fields">
+<tr>
+<th class="Updated comment">Name</th>
+<td ><%= f.text_field(:commenttext,:class => "lol")%></td>
+</tr>
+<p class="name">Are you sure you want to permanently update this Comment?</p>
+<p class= "reference.name"><%= @comments.commenttext %></p>
+</table>
+<div class ="from-buttons">
+<%= submit_tag("Update comment", :class => "submt")%>
+</div>
+<%end%>
+</div>

@@ -1,0 +1,30 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="home.css"></head>
+
+<body>
+	<!--<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; j
+		s.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script> <div class="fb-comments" data-width="100px" data-numposts="10"></div>-->
+<div class="live"><%= link_to image_tag("Untitled-6.jpg"),:action=> "home"%></div>
+<h2>Home Page</h2>
+<div class="toolbar">
+<%= link_to '<button type="button" class="home" >Home Page</button>'.html_safe, :action => 'home' %>
+<%= link_to '<button type="button" class="about" >About us</button>'.html_safe, :action => 'about' %>
+<%= link_to '<button type="button" class="contact" >Contact us</button>'.html_safe, :action => 'contact' %>
+</div>
+<p>Welcome to our Website !</p>
+<div class="photos" >
+<div class="mickey"><%= link_to image_tag("Mickey-Mouse-1.gif"),:controller =>"comment",:action=> "index",:photoid=>"1" %></div>
+<div class="donald"> <%= link_to image_tag("images.jpeg"),:controller =>"comment",:action=> "index",:photoid=>"2" %></div>
+<div class="goofy"><%= link_to image_tag("index.jpeg"),:controller =>"comment",:action=> "index",:photoid=>"3"%></div>
+</div>
+
+<h3>Click on the Picture You Like!</h3>
+<h4>--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------</h4>
+</body>
+</html>
+<!--<a class="image" href="file:///home/cse2017/Website/Web/app/views/contact_us/contact.html.erb"><img src="images.jpeg"></a>-->
+
+
+
+

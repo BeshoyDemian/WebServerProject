@@ -1,0 +1,65 @@
+<head><link rel="stylesheet" type="text/css" href="index.css"></head>
+<div class="live"><%= link_to image_tag("Untitled-6.jpg"),:action=> "home"%></div>
+<div class="toolbar">
+<%= link_to '<button type="button" class="home" >Home Page</button>'.html_safe, :action => 'home' %>
+<%= link_to '<button type="button" class="about" >About us</button>'.html_safe, :action => 'about' %>
+<%= link_to '<button type="button" class="contact" >Contact us</button>'.html_safe, :action => 'contact' %>
+</div>
+
+
+<% @page_title ="Photo Comments" %>
+<%= javascript_include_tag "index.js.erb" %>
+
+<div class="Photo_index">
+  <div class="Photos">
+<% if @x == "1" %>
+<%= href= image_tag('Mickey-Mouse-1.gif')%>
+
+     	<% end %>
+<% if @x == "2" %>
+<%= href= image_tag('images.jpeg')%>
+     	<% end %>
+
+     	<% if @x == "3" %>
+<%= href= image_tag('index.jpeg')%>
+     	<% end %>
+  </div>
+  <h4 class="like">Likes</h4>
+   <th><div class="box">    
+        <label for="qty"><abbr title="Quantity"></abbr></label>
+        <input id="qty" value="0" />
+        <button id="up" onclick="modify_qty(1)">LIKE!</button>
+    </div></th>
+</tr>
+<h2 class="comment" >Comments</h2>
+<table class= "listing" summary="Comment list">
+<tr class="header">
+  <th><p class="date">Date and Time of Comment</p> </th>
+  <th><p  class="word">Comment</p></th>
+  <th><p class="act">Actions</p></th>
+  
+
+  </tr> <% @comments.each do |comment| %> <tr>
+  <td class="try"><%= comment.created_at %></td>
+  <td class="try"><%= comment.commenttext %></td>
+<td class="actions">
+<!--<%= link_to("Edit",{:action => "edit" , :id => comment.id,:photo_id=>params[:photoid]}, :class => 'action edit') %>-->
+<%= link_to('<button type="button" class="edt" >Edit</button>'.html_safe, {:action => 'edit',:id => comment.id,:photo_id=>params[:photoid]},:class => 'action edit')%>
+<%= link_to('<button type="button" class="dlt" >Delete</button>'.html_safe, {:action => "delete", :id => comment.id,:photo_id=>params[:photoid]}, :class => 'action delete')%>
+<% end %>
+</table>
+</div>
+
+
+<div class = "subjects new">
+<h2 class="create">Create Comment</h2>
+<%= form_for(:comment , :url => {:action => "create",:photo_id=>params[:photoid]}) do |f| %>
+<%= render(:partial => "form", :locals => {:f => f}) %>
+
+
+<div class ="from-buttons">
+<%= submit_tag("Submit Comment", :class => "submt")%>
+</div>
+<%end%>
+</div>
+

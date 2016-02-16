@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag "delete.css" %>
+<%= link_to('<button type="button" class="let"> << Back to the Photo</button>'.html_safe,{:action => "index",:photoid=>params[:photo_id]})%>
+
+<div class = "comments delete">
+<h2 class="update">Delete comment</h2>
+
+<%= form_for(:comment , :url => {:action => "destroy" ,:id => @comments.id,:photo_id=>params[:photo_id]}) do |f| %>
+<table summary="Comment from fields">
+<p class="name">Are you sure you want to permanently delete this Comment?</p>
+<p class= "reference.name"><%= @comments.commenttext %></p>
+<div class ="from-buttons">
+<%= submit_tag("Delete Comment", :class => "submt")%>
+</div>
+<%end%>
+</div>

@@ -1,0 +1,133 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+h1{
+	font-family: arial;
+	color: white;
+}
+h2{
+	margin-left: 40%;
+	color: #71C671;
+	font-size: 70px;
+
+}
+p {
+	font-size: 50px;
+	color: #00FF7F;
+    vertical-align: center;
+    text-align: center;
+
+}
+.toolbar{
+	display: flex;
+   /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;*/
+
+}
+.home {
+
+    height: 100%;
+    width: 450px;
+    font-size: 50px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+.about{
+	
+    height: 100%;
+    width: 450px;
+    font-size: 50px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+.contact{
+    height: 100%;
+    width: 450px;
+    font-size: 50px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+
+*{
+	background-color: #27408B;
+}
+.photos img {
+    position: absolute;
+    margin-top: 400px;
+}
+
+
+.donald  img:nth-of-type(1) {
+    left: 100px;
+    top: 200px;
+    width: 400;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    
+}
+ 
+.goofy img:nth-of-type(1) {
+    left: 500px;
+    top: 200px;
+    width: 400;
+
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+ 
+.mickey  img:nth-of-type(1) {
+    left: 700px;
+    top: 200px;
+    width: 320;
+    text-align: right;
+    vertical-align: right;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+.photos img:hover {
+    -webkit-transform: rotate(380deg) scale(1.5);
+    -moz-transform: rotate(380deg) scale(1.5);
+    -o-transform: rotate(380deg) scale(1.5);
+    transform: rotate(380deg) scale(1.5);
+    z-index: 10;
+}
+.photos img {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 10px 10px 30px 10px;
+    background: white;
+    border: solid 1px black;
+}
+h3{
+    margin-top: 900px;
+    font-size: 50px;
+    color: #00FF7F;
+    text-align: center ;
+
+}
+
+
+
+
+
+

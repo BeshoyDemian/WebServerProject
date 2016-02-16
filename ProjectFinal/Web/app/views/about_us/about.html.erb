@@ -1,0 +1,15 @@
+<html>
+<%= stylesheet_link_tag "about_us.css" %>
+
+<body>
+<div class="live"><%= link_to image_tag("Untitled-6.jpg"),:action=> "home"%></div>
+<h2>About Us</h2>
+<div class="toolbar">
+<%= link_to '<button type="button" class="home" >Home Page</button>'.html_safe, :action => 'home' %>
+<%= link_to '<button type="button" class="about" >About us</button>'.html_safe, :action => 'about' %>
+<%= link_to '<button type="button" class="contact" >Contact us</button>'.html_safe, :action => 'contact' %>
+</div>
+<p>We are a group consists of 3 students at faculty of engineering, Ain shams university "third year, computer and system department", We have co-ordinated together to make this website as a project for software engineering subject under the supervision of Eng: Omar Amin.</p>
+</body>
+<h3>-----------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+</html>

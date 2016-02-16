@@ -1,0 +1,16 @@
+.let{
+    height: 30%;
+    width: 100px;
+    font-size: 20px;
+    text-align: center ;
+    text-decoration: none;
+    color: yellow;
+    border: transparent;
+    background-color: black;
+}
+.update{
+	font-size: 40px;
+    color: yellow;
+    margin-left: 1%;
+}
+}

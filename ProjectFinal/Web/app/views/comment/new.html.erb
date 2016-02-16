@@ -1,0 +1,14 @@
+<%= link_to("<< Back to photos", {:action => "index"} , :class => "back-link") %>
+
+<div class = "comments new">
+<h2>Create Comment</h2>
+
+<%= form_for(:comment , :url => {:action => "create"}) do |f| %>
+
+<%= render(:partial => "form", :locals => {:f => f} ) %>
+
+<div class ="from-buttons">
+<%= submit_tag("Create Comments")%>
+</div>
+<%end%>
+</div>
